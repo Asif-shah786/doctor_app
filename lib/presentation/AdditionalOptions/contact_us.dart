@@ -1,5 +1,7 @@
 import 'package:doctorapp/config/app_config.dart';
 import 'package:flutter/material.dart';
+import '../../config/const_file.dart';
+import 'addtional_option_list_screen.dart';
 import 'common_textfiled.dart';
 import 'contact_container.dart';
 
@@ -27,7 +29,11 @@ class ContactUs extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ContactContainer('asset/svg/phone.svg', 'Anruf'),
+                  GestureDetector(
+                      onTap: () async{
+                        await openLinkHelper(urlName: urlNameAddressMap['contactAndSupport']);
+                      },
+                      child: ContactContainer('asset/svg/phone.svg', 'Anruf')),
                   const SizedBox(
                     width: 20,
                   ),

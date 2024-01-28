@@ -1163,7 +1163,9 @@ class CommonList{
 
  static  List<String> additionalOptList = [
     "Kontaktiere uns",
-    "Uber uns"
+    "Uber uns",
+   "Legal",
+   "Datenschutz",
   ];
 
  static Map<int,dynamic> subchapterList =
@@ -1221,6 +1223,13 @@ class CommonList{
  };
 
 }
+
+Map urlNameAddressMap = {
+  'legal': 'https://medtronicsustainability.com/kontakt/',
+  'datenschutz': 'https://medtronicsustainability.com/datenschutzerklarung/',
+  'contactAndSupport': 'https://medtronicsustainability.com/kontakt/',
+};
+
 
 
 
